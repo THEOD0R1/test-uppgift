@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  min-height: 200vh;
+}
+main {
+  width: 100%;
+
+  .main__schedule {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    background-image: url("/src/annie-spratt-yI3weKNBRTc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .main__schedule__title__container {
+      margin: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        margin: 0;
+        text-decoration: underline rgb(0, 0, 0);
+        font-size: 35pt;
+      }
+    }
+    .main__schedule__opening-hours {
+      .main__schedule__opening-hours__container {
+        padding: 50px;
+        h4 {
+          font-size: 14pt;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .main__food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-image: url("/src/jason-leung-poI7DelFiVA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .main__food__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgb(255, 206, 115);
+      h2 {
+        margin: 5px;
+        font-size: 30pt;
+      }
+      .main__food__title__menu {
+        height: 5px;
+        button {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+          border: none;
+          font-size: 10pt;
+          transition: font-size 0.2s;
+          color: rgb(255, 206, 115);
+
+          cursor: pointer;
+          &:hover {
+            font-size: 8pt;
+          }
+        }
+      }
+    }
+  }
+}
